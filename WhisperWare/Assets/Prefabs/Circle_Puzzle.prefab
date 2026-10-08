@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2115388670862770427}
   - component: {fileID: 6050223071958975559}
   m_Layer: 0
-  m_Name: small_one
+  m_Name: Inner_Space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 1981775741765680588}
   - component: {fileID: 8624743049675340475}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 8898874693989254245}
   - component: {fileID: 5910843875317984159}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Circle_Puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
