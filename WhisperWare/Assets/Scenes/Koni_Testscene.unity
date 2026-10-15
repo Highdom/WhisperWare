@@ -1199,13 +1199,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb5bc53d6a9a5541b3310a62add72fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnalysePuzzleManagerScript
-  symbole:
-  - {fileID: 1132512546}
-  - {fileID: 996215223}
+  solutions:
+  - {fileID: 1396016442}
+  - {fileID: 1693833778}
+  symbols:
+  - {fileID: 1132512542}
+  - {fileID: 996215220}
+  delayBetweenItems: 0.3
+  animationDuration: 0.4
+  symbolSpacing: 1.3
   highlights:
   - {fileID: 156804664}
   - {fileID: 50989586}
-  cam: {fileID: 0}
 --- !u!61 &1981989283
 BoxCollider2D:
   m_ObjectHideFlags: 0
