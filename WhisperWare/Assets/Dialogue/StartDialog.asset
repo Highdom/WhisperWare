@@ -29,6 +29,12 @@ MonoBehaviour:
     portrait: {fileID: 0}
     text: "Sprich mit der H\xE4ndlerin am Marktplatz. Sie braucht Hilfe bei einer
       vermissten Lieferung."
+    nextNodeId: info2
+    choices: []
+  - id: info2
+    speakerName: Wache
+    portrait: {fileID: 0}
+    text: Er ist manchmal auch im wald!
     nextNodeId: ende
     choices: []
   - id: ende
