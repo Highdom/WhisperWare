@@ -10,7 +10,7 @@ public class NewMonoBehaviourScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        collider2ds = GetComponentsInChildren<Collider2D>();
+        collider2ds = transform.parent.GetComponentsInChildren<Collider2D>();
     }
 
     // Update is called once per frame
@@ -24,12 +24,15 @@ public class NewMonoBehaviourScript : MonoBehaviour
         {
             foreach (Collider2D col2 in collider2ds)
             {
+                Debug.Log(col1.name);
+                Debug.Log(col2.name);
                 if (col1 == col2)
                     continue;
 
                 if (col1.bounds.Intersects(col2.bounds))
                 {
                     overlapFound = true;
+                    Debug.Log("Overlap gefunden");
                     break;
                 }
             }
@@ -43,12 +46,12 @@ public class NewMonoBehaviourScript : MonoBehaviour
             Vector2 mousePos =
                 Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
-            RaycastHit2D hit =
-                Physics2D.Raycast(mousePos, Vector2.zero);
+            Collider2D[] hits =
+                Physics2D.OverlapPointAll(mousePos);
 
-            if (hit.collider != null)
+            if (hits.Length >= 2)
             {
-                Debug.Log("Clicked: " + hit.collider.name);
+                Debug.Log("Überlappungsbereich angeklickt!");
             }
         }
     }
