@@ -41,22 +41,6 @@ public class AnalysePuzzleManager : MonoBehaviour
 
     void Update()
     {
-        if (opened)
-            return;
-
-        if (Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero);
-
-            if (hit.collider != null && hit.collider.gameObject == gameObject)
-            {
-                opened = true;
-                StartCoroutine(ShowPuzzle());
-            }
-        }
-
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
             Vector2 mousePos =
@@ -68,13 +52,26 @@ public class AnalysePuzzleManager : MonoBehaviour
             if (hit.collider == null)
                 return;
 
-            AnalyseSymbolScript symbol =
-                hit.collider.GetComponent<AnalyseSymbolScript>();
-
-            if (symbol == null)
+            // Puzzle öffnen
+            if (!opened && hit.collider.gameObject == gameObject)
+            {
+                opened = true;
+                StartCoroutine(ShowPuzzle());
                 return;
+            }
 
-            ShowHighlight(symbol.symbolID);
+            // Symbole prüfen
+            if (opened)
+            {
+                AnalyseSymbolScript symbol =
+                    hit.collider.GetComponent<AnalyseSymbolScript>();
+
+                if (symbol != null)
+                {
+                    Debug.Log("ID: " + symbol.symbolID);
+                    ShowHighlight(symbol.symbolID);
+                }
+            }
         }
     }
 
@@ -155,7 +152,7 @@ public class AnalysePuzzleManager : MonoBehaviour
 
     void ShowHighlight(int id)
     {
-        foreach (GameObject highlight in highlights)
+        if (id >= 0 && id < highlights.Length)
         {
             highlights[id].SetActive(true);
         }
