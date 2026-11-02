@@ -189,37 +189,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.40985727, y: -0.0136614805}
   m_Size: {x: 0.18028545, y: 0.20214549}
   m_Direction: 0
---- !u!114 &361176098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 361176092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e6bd6e079d9a1e45a84c2b435b4ed3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
-  rotationSpeed: 5
---- !u!1 &1396016441 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6696899602716064654, guid: 45e37a989c252e0468aa502efff0689e, type: 3}
-  m_PrefabInstance: {fileID: 1024884766993180457}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1396016445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1396016441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a08011ebad99b46419e019eeedfdb9c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnalyseSymbolScript
-  symbolID: 0
 --- !u!1 &1479631020
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,10 +485,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2192114900918065288, guid: 45e37a989c252e0468aa502efff0689e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2736183796713602681, guid: 45e37a989c252e0468aa502efff0689e, type: 3}
       propertyPath: m_Name
       value: Analyse_Puzzle
@@ -567,10 +532,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6696899602716064654, guid: 45e37a989c252e0468aa502efff0689e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1396016445}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45e37a989c252e0468aa502efff0689e, type: 3}
 --- !u!1001 &8834695502884475562
 PrefabInstance:
@@ -635,9 +597,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2609760190117029274, guid: ec937178ebd11304e87575c9f8cf56b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 361176095}
-    - targetCorrespondingSourceObject: {fileID: 2609760190117029274, guid: ec937178ebd11304e87575c9f8cf56b1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 361176098}
     - targetCorrespondingSourceObject: {fileID: 385436177387939467, guid: ec937178ebd11304e87575c9f8cf56b1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 200500793}
