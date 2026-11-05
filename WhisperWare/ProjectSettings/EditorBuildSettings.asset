@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 26ac7592aab8c044bbde534442d3cedf
+  - enabled: 1
+    path: Assets/Scenes/Wimmelbild.unity
+    guid: ae95ac55c53b0a64290ceb97426b2831
+  - enabled: 1
+    path: Assets/Scenes/Einstellung.unity
+    guid: e7d9ef3ff001816449511bd435633a24
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
